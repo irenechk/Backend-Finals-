@@ -1,0 +1,31 @@
+{
+  "name": "gighub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node node_modules/nodemon/bin/nodemon.js server.js",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "seed": "node scripts/seed.js",
+    "test": "node test_suite.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "firebase-admin": "^14.5.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.3",
+    "socket.io": "^4.8.4",
+    "socket.io-client": "^4.8.4",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
